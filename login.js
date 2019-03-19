@@ -14,15 +14,23 @@ const setupui = (user) =>{
     }
 }
 
+
 const login = document.querySelector('#login-form');
 login.addEventListener('submit',(e) => {
     e.preventDefault();
     const email = login['email'].value;
     const psw = login['psw'].value;
-
-    auth.signInWithEmailAndPassword(email, psw).then(cred => {
-        login.reset();
-    });
+    firebase.auth().signInWithEmailAndPassword(email, psw).then(function(user) {
+     }).catch(function(error) {
+         var errorCode = error.code;
+         var errorMessage = error.message;
+        if (errorCode === 'auth/wrong-password') {
+             alert('Wrong password.');
+         } else {
+             alert(errorMessage);         
+         }
+         console.log(error);
+     });
 });
 
 const logout = document.querySelector('#logout');
@@ -41,4 +49,3 @@ auth.onAuthStateChanged(user => {
         setupui();
     }
 })
-
