@@ -5,10 +5,21 @@ signup.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = signup['email'].value;
     const psw = signup['psw'].value;
-    auth.createUserWithEmailAndPassword(email, psw).then(cred => {
-        console.log(cred.user);
-        signup.reset();
-    });
+        firebase.auth().createUserWithEmailAndPassword(email, psw).catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            if ( errorCode == 'email-already-in-use' ) {
+                alert('You already have an account with that email.');
+            } else if ( errorCode == 'auth/invalid-email' ) {
+                alert('Please provide a valid email');
+            } else if ( errorCode == 'auth/weak-password' ) {
+                alert('The password is too weak.');
+            } else {
+                alert(errorMessage);
+            }
+            console.log(error);
+            signup.reset();
+        });
 });
 
 //logout
@@ -42,7 +53,6 @@ const setupui = (user) =>{
         loggedIn.forEach(item => item.style.display = 'block');
     }
 }
-
 
 
 
