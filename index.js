@@ -23,7 +23,6 @@ const setupui = (user) =>{
     if(user){
         loggedOut.forEach(item => item.style.display = 'block');
         loggedIn.forEach(item => item.style.display = 'none');
-        window.location = "booking.html";
     }
     else{
         loggedOut.forEach(item => item.style.display = 'none');
