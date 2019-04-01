@@ -1,9 +1,48 @@
+
+body { 
+ background: url('n1.jpeg') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color:black;
+}
+
+.container{
+   margin:50px;
+   left:90px;
+   margin-left:50px;
+}
+
+input[type=text]:focus {
+  width: 25%;
+}
+
+.btn{
+  height: 60px;
+  width: 200px;
+}
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
-  width: 80%;
+  float: left;  width: 80%;
   background: #f1f1f1;
   color:black;
 }
@@ -12,9 +51,9 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
-  color: black;
-  font-size: 17px;
+  background:#f1f1f1 ;
+  color: white;
+  font-size: 30px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
