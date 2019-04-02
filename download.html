@@ -67,22 +67,44 @@
 
 <br>
 <br>
-    
-<div class="row">
-  <form id="download-form">
+    <div class="row">
+        
     <div class="col-md-3">
+         <form id="download-form">
         <div class="container select">
-          <input type="text" placeholder="enter category" id="category" required>
-          <input type="text" placeholder="enter name" id="name" required>
+    <select>
+        <option> Select Category</option>
+        <option value="Technical">Technical</option>
+        <option value="Maths">Maths</option>
+        <option value="Organizational behaviour">Organizational Behaviour</option>
+        <option value="Accounts">Accounts</option>
+        <option value="Web">Web</option>
+        <option value="Management">Management</option>
+   </select>
+
+</div>
+   </div>
+
+
+    <div class="col-md-3">
+       <div class="container select">
+   <select>
+        <option> Book name</option>
+        <option value="Computer Graphics">Computer Graphics</option>
+        <option value="Alandix">Alandix</option>
+        <option value="Organizational behaviour">Organizational Behaviour</option>
+        <option value="let us c">let us c</option>
+        <option value="Unix">UNIX</option>
+        <option value="RDsharma">RDsharma</option>
+   </select>
 </div>  
   </div>
 
     <div class="col-md-2">
         <a href=""><input type="button" class=" btn-primary" value="Go"></a>
          </div>
-         </form>
+        </form>
  </div>
-
  <ul id="book-list" style="color: white;"></ul>
  
 
