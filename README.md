@@ -23,10 +23,8 @@ Through this platform a mechanism of sharing and borrowing books takes place,so 
   - JavaScript
 
  *Backend and tools*
-  - Server : Apache
-  - Database :  MySql 
-  - Programming Language : PHP
-
+  -Firebase
+  
  *References*
   - https://www.w3schools.com/
   - https://getbootstrap.com/     
