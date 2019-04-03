@@ -11,21 +11,21 @@ var fileButton = document.getElementById("fileButton");
                 uploader.value = per;
                 snapshot.ref.getDownloadURL().then(function(url) {
                     console.log('File available at', url);
+                    frm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        db.collection('books').doc(frm.name.value).set({
+                            name: frm.name.value,
+                            publisher: frm.publisher.value,
+                            author: frm.author.value,
+                            category: frm.category.value,
+                            filename: file.name,
+                            url: url
+                        });
+                        frm.reset();
+                    }); 
                 });
             }
         );
-        frm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            db.collection('books').add({
-                name: frm.name.value,
-                publisher: frm.publisher.value,
-                author: frm.author.value,
-                category: frm.category.value,
-                filename: file.name
-            });
-            frm.reset();
-            alert("uploading successful")
-        }); 
+       // alert("uploading successful")
+        
      }); 
-     
-     
