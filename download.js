@@ -1,41 +1,43 @@
-// function download(){
-//     var fileName = window.AppInventor.getWebViewString();
-//     var storage = firebase.storage();
-//     var pathReference = storage.ref(fileName);
-//     pathReference.getDownloadURL().then(function(url) {
-//         window.AppInventor.setWebViewString(url);
-//     });
-// }
-
 const list = document.querySelector('#book-list');
-const frm = document.querySelector('#download-form');
+const form = document.querySelector('#download-form');
 
 function render(doc){
     let li = document.createElement('li');
     let name= document.createElement('span');
     let category = document.createElement('span');
-    let div = document.createElement('div');
-
-    li.setAttribute('data-id' , doc.id);
-    name.textContent = doc.data().name;
-    category.textContent = doc.data().category;
-    div.textContent = 'download';
-
+    let url = document.createElement('a');
+    var att = document.createAttribute("href");        
+    // url.setAttributeNode(att);
+    // att.value = doc.data().url;   
+    // li.setAttribute('data-id' , doc.id);
+    // name.textContent = doc.data().name;
+    category.textContent = doc.data().category; 
     li.appendChild(name);
     li.appendChild(category);
-    li.appendChild(div);
+    li.appendChild(url);
     list.appendChild(li);
 
-    frm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        db.collection('books').where('category','==','#category').where('name','==','#name').get().then((snapshot) => {
-            snapshot.docs.forEach(doc => {
-                render(doc);
-            }) 
-        });
-    })
    
 }
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('books').where('category','==','#category').where('name','==','#name').get().then((snapshot) => {
+        snapshot.docs.forEach(doc => {
+            render(doc);
+        }) 
+    });
+    db.collection('books').onSnapshot(snapshot => {
+        let changes = snapshot.docChanges();
+        changes.forEach(change => {
+                render(change.doc);
+        })
+    });
+});
+form.reset();
 
 
-//https://firebasestorage.googleapis.com/v0/b/booksharing-93751.appspot.com/o/best.jpeg?alt=media&token=04fc7708-64c3-44fd-9401-c5d719367748
+
+var anchor = document.getElementById("myAnchor");  // Get the <a> element with id="myAnchor"
+var att = document.createAttribute("href");        // Create a "href" attribute
+att.value = "https://www.w3schools.com";            // Set the value of the href attribute
+anchor.setAttributeNode(att);  
