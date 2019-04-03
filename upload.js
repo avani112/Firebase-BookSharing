@@ -26,6 +26,6 @@ var fileButton = document.getElementById("fileButton");
                 });
             }
         );
-       // alert("uploading successful")
-        
      }); 
+    alert("uploading successful");
+        
