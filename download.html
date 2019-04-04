@@ -28,135 +28,45 @@
 
 <body background="download.jpg">
   
-    <nav class="navbar navbar-default navbar">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-        </div>
-    
-        <div class="collapse navbar-collapse" id="myNavbar">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#c">Contact Us</a></li>
+  <nav class="navbar navbar-default navbar">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" id="logout">
+            <li class="login"><a href="index.html">Logout</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html">Home</a></li>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="login"><a href="booking.html">Search Books</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#h">How it Works</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li> <a href="index.html#s">Our Services</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#a">About</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" id="logout">
-              <li class="login"><a>Logout</a></li>
-            </ul>
-         <ul class="nav navbar-nav navbar-right" style="clear: both;">
-      <li class="logout" ><a href="signup.html" data-target="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li class="logout"><a href="login.html" data-target="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-    
-        </div>
-      </div>
-    </nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#c">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#h">How it Works</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#s">Our Services</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#a">About</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="upload.html">Upload</a></li>
+      </ul>
+</div>
+</nav>
   <br><br>
-    <center>
-    <a href="download.html"><input type="button" class="btn btn-primary" value="Download"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="upload.html"><input type="button" class="btn btn-primary" value="Upload"></a>
-    </center>
 <br>
 <br>
-<<<<<<< HEAD
-
-<div class="row">
-    
-    <div class="col-md-4">
-      <div class="thumbnail">
-       
-  <img src="t.jpg" class="img-responsive img" style="width:80%">
-          <div class="caption">Technical
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-       
-        <img src="ob.jpg" class="img-responsive img" style="width:80%">
-          <div class="caption">Behaviour
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-        
-          <img src="a.png" class="img-responsive img" style="width:65%">
-          <div class="caption">
-           Accounts
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    
-    <div class="col-md-4">
-      <div class="thumbnail">
-       
-     <img src="s.jpg" class="img-responsive img" style="width:100%">
-          <div class="caption">Maths
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-       
-<img src="web.jpeg" class="img-responsive img" style="width:75%">
-          <div class="caption">Web Development
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-        
-<img src="m.jpeg" class="img-responsive img" style="width:85%">
-          <div class="caption"> Management
-          </div>
-        </a>
-
-        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
-        <script>
-            var config = {
-              apiKey: "AIzaSyB3qOZtwa5tC9iIMaHplKu_W5Xig0-Eb0o",
-              authDomain: "booksharing-93751.firebaseapp.com",
-              databaseURL: "https://booksharing-93751.firebaseio.com",
-              projectId: "booksharing-93751",
-              storageBucket: "booksharing-93751.appspot.com",
-              messagingSenderId: "1030564970062"
-            };
-            firebase.initializeApp(config);
-            const auth = firebase.auth();
-            const db = firebase.firestore();
-          </script>
-          <script src="book.js"></script>
-=======
   <h1>Download</h1>
         <div class="content">
             <form id="add-download-form"></form>
@@ -177,28 +87,31 @@
         </form>
       </div>
 
-            <ul id="book-list  style="color: white;"></ul>
+            <ul id="book-list"  style="color: white;">
+              <li></li>
+            </ul>
+
 
         </div>
 
 </div>
-        
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBlr8Syh2bwEHKbF7IKhsArsexrAvv_OwE",
-    authDomain: "book-sharing-27381.firebaseapp.com",
-    databaseURL: "https://book-sharing-27381.firebaseio.com",
-    projectId: "book-sharing-27381",
-    storageBucket: "book-sharing-27381.appspot.com",
-    messagingSenderId: "745323790230"
-  };
-  firebase.initializeApp(config);
-  const auth = firebase.auth();
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+    <script>
+        var config = {
+          apiKey: "AIzaSyB3qOZtwa5tC9iIMaHplKu_W5Xig0-Eb0o",
+          authDomain: "booksharing-93751.firebaseapp.com",
+          databaseURL: "https://booksharing-93751.firebaseio.com",
+          projectId: "booksharing-93751",
+          storageBucket: "booksharing-93751.appspot.com",
+          messagingSenderId: "1030564970062"
+        };
+        firebase.initializeApp(config);
+        const auth = firebase.auth();
         const db = firebase.firestore();
-</script>
+      </script>
     <script src="download.js"></script>
     <script src="logupload.js"></script>
->>>>>>> 1d63cddd6ffea431733c1b592243c84d47033a85
 </body>
 </html>

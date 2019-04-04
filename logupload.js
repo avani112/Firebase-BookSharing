@@ -13,15 +13,6 @@ const setupui = (user) =>{
         window.location="index.html";
     }
 }
-
-const logout = document.querySelector('#logout');
-logout.addEventListener('click', (e) => {
-    e.preventDefault();
-    auth.signOut();
-});
-
-//after authentication
-
 auth.onAuthStateChanged(user => {
     if (user){
         setupui(user);
@@ -30,3 +21,12 @@ auth.onAuthStateChanged(user => {
         setupui();
     }
 })
+
+const logout = document.querySelector('#logout');
+logout.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+});
+
+
+
