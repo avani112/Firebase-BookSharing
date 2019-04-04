@@ -22,8 +22,12 @@
     <link rel="stylesheet" href="booking.css">
 
 <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
-    </head>
-<body>
+
+<link rel="stylesheet" href="download.css">
+  </head>
+
+<body background="download.jpg">
+  
     <nav class="navbar navbar-default navbar">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -69,6 +73,7 @@
     </center>
 <br>
 <br>
+<<<<<<< HEAD
 
 <div class="row">
     
@@ -151,5 +156,49 @@
             const db = firebase.firestore();
           </script>
           <script src="book.js"></script>
+=======
+  <h1>Download</h1>
+        <div class="content">
+            <form id="add-download-form"></form>
+
+             <div class="row">
+               <div class="col-md-3">
+                        <input type="text" placeholder="Enter name" id="name" required>
+              </div>
+
+    <div class="col-md-3">
+          <input type="text" placeholder="Enter category" id="category" required>
+              </div>
+
+
+    <div class="col-md-2">
+        <a href=""><input type="button" class=" btn-primary" value="Go"></a>
+         </div>
+        </form>
+      </div>
+
+            <ul id="book-list  style="color: white;"></ul>
+
+        </div>
+
+</div>
+        
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBlr8Syh2bwEHKbF7IKhsArsexrAvv_OwE",
+    authDomain: "book-sharing-27381.firebaseapp.com",
+    databaseURL: "https://book-sharing-27381.firebaseio.com",
+    projectId: "book-sharing-27381",
+    storageBucket: "book-sharing-27381.appspot.com",
+    messagingSenderId: "745323790230"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+        const db = firebase.firestore();
+</script>
+    <script src="download.js"></script>
+    <script src="logupload.js"></script>
+>>>>>>> 1d63cddd6ffea431733c1b592243c84d47033a85
 </body>
 </html>

@@ -27,7 +27,6 @@ var fileButton = document.getElementById("fileButton");
                 });
             }
         );
-       
-        
      }); 
-  
+ 
+        
