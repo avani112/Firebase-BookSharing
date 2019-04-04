@@ -4,9 +4,6 @@
     <title>Book Sharing </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 
@@ -22,15 +19,11 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="booking.css">
 
 <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
-
-<link rel="stylesheet" href="download.css">
-  </head>
-
-
-
-<body background="upload.jpeg">
+    </head>
+<body>
     <nav class="navbar navbar-default navbar">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -41,12 +34,7 @@
         </div>
     
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" id="logout">
-                <li class="login"><a href="index.html">Logout</a></li>
-              </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="login"><a href="booking.html">Search Books</a></li>
-              </ul>
+          
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html#c">Contact Us</a></li>
           </ul>
@@ -57,74 +45,111 @@
             <li><a href="index.html#h">How it Works</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#s">Our Services</a></li>
+            <li> <a href="index.html#s">Our Services</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html#a">About</a></li>
           </ul>
-    </div>
-    </nav>
-
-<br>
-<br>
-<div class="row">
-  <form id="download-form">
-    <div class="col-md-3">
-        <div class="container select">
-          <input type="text" placeholder="enter category" id="category" required> <br>
+          <ul class="nav navbar-nav navbar-right" id="logout">
+              <li class="login"><a>Logout</a></li>
+            </ul>
+         <ul class="nav navbar-nav navbar-right" style="clear: both;">
+      <li class="logout" ><a href="signup.html" data-target="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li class="logout"><a href="login.html" data-target="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+    
         </div>
-    </div>
-    <div class="col-md-3">
-        <div class="container select">
-          <input type="text" placeholder="enter name" id="name" required> 
-        </div>  
-    </div>
-    <div class="col-md-2">
-        <a href=""><input type="submit" class=" btn-primary" value="Go"></a>
-    </div>
-  </form>
- </div>
+      </div>
+    </nav>
+  <br><br>
+    <center>
+    <a href="download.html"><input type="button" class="btn btn-primary" value="Download"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <a href="upload.html"><input type="button" class="btn btn-primary" value="Upload"></a>
+    </center>
+<br>
+<br>
 
+<div class="row">
+    
+    <div class="col-md-4">
+      <div class="thumbnail">
+       
+  <img src="t.jpg" class="img-responsive img" style="width:80%">
+          <div class="caption">Technical
+          </div>
+        </a>
+      </div>
+    </div>
 
- <ul id="book-list" style="color: white;"></ul>
- 
+    <div class="col-md-4">
+      <div class="thumbnail">
+       
+        <img src="ob.jpg" class="img-responsive img" style="width:80%">
+          <div class="caption">Behaviour
+          </div>
+        </a>
+      </div>
+    </div>
 
+    <div class="col-md-4">
+      <div class="thumbnail">
         
-<script>
-    // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyB3qOZtwa5tC9iIMaHplKu_W5Xig0-Eb0o",
-  authDomain: "booksharing-93751.firebaseapp.com",
-  databaseURL: "https://booksharing-93751.firebaseio.com",
-  projectId: "booksharing-93751",
-  storageBucket: "booksharing-93751.appspot.com",
-  messagingSenderId: "1030564970062"
-};
-firebase.initializeApp(config);
-const db = firebase.firestore();
-const auth = firebase.auth();
-    </script>
-    <script src="download.js"></script>
-    <script src="logupload.js"></script>
+          <img src="a.png" class="img-responsive img" style="width:65%">
+          <div class="caption">
+           Accounts
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-md-4">
+      <div class="thumbnail">
+       
+     <img src="s.jpg" class="img-responsive img" style="width:100%">
+          <div class="caption">Maths
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+       
+<img src="web.jpeg" class="img-responsive img" style="width:75%">
+          <div class="caption">Web Development
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        
+<img src="m.jpeg" class="img-responsive img" style="width:85%">
+          <div class="caption"> Management
+          </div>
+        </a>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+        <script>
+            var config = {
+              apiKey: "AIzaSyB3qOZtwa5tC9iIMaHplKu_W5Xig0-Eb0o",
+              authDomain: "booksharing-93751.firebaseapp.com",
+              databaseURL: "https://booksharing-93751.firebaseio.com",
+              projectId: "booksharing-93751",
+              storageBucket: "booksharing-93751.appspot.com",
+              messagingSenderId: "1030564970062"
+            };
+            firebase.initializeApp(config);
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+          </script>
+          <script src="book.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

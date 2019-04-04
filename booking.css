@@ -1,31 +1,21 @@
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-  color:black;
-}
-
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: black;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+body { 
+  background: url('n1.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+ 
+ 
+ .container{
+    margin:50px;
+    left:90px;
+    margin-left:50px;
+ }
+ 
+ 
+ .btn{
+   height: 60px;
+   width: 200px;
+  float:center;
 }
