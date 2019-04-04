@@ -28,9 +28,5 @@ var fileButton = document.getElementById("fileButton");
             }
         );
      }); 
-<<<<<<< HEAD
- 
-=======
     
->>>>>>> dc13ee002b029f82903736c4da776bf65c033052
         
