@@ -21,11 +21,12 @@ var fileButton = document.getElementById("fileButton");
                             filename: file.name,
                             url: url
                         });
+                        alert("uploading successful");
                         frm.reset();
                     }); 
                 });
             }
         );
      }); 
-    alert("uploading successful");
+    
         
