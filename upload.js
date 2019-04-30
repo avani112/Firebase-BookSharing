@@ -13,9 +13,8 @@ var fileButton = document.getElementById("fileButton");
                     console.log('File available at', url);
                     frm.addEventListener('submit', (e) => {
                         e.preventDefault();
-                        db.collection('books').doc(frm.name.value).set({
+                        db.collection('books').add({
                             name: frm.name.value,
-                            publisher: frm.publisher.value,
                             author: frm.author.value,
                             category: frm.category.value,
                             filename: file.name,
@@ -27,6 +26,4 @@ var fileButton = document.getElementById("fileButton");
                 });
             }
         );
-     }); 
-    
-        
+});
