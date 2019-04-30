@@ -4,6 +4,7 @@ function render(doc){
     let name= document.createElement('td');
     let author = document.createElement('td');
     let category = document.createElement('td');
+    let td = document.createElement('td');
     let a = document.createElement('a');
     a.setAttribute('href', doc.data().url); 
     a.setAttribute('class', "download"); 
@@ -16,7 +17,8 @@ function render(doc){
     tr.appendChild(name);
     tr.appendChild(author);
     tr.appendChild(category);
-    tr.appendChild(a);
+    tr.appendChild(td);
+    td.appendChild(a);
     list.appendChild(tr); 
 }
 db.collection('books').orderBy('name').get().then(snapshot => {

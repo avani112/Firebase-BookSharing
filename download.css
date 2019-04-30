@@ -10,14 +10,15 @@
 .download{
         letter-spacing: 2px;
         color: blue;
-        background: rgba(255,255,255,0.6);
         cursor:  pointer;
         padding: 20px;
-        background: #f6f6f6;
         font-size: 20px;
-        position: absolute;
+        position: relative;
         text-align: right;
         border-bottom: 1px solid #e6e6e6;
+        height: 46px;
+        margin-top: 6px;
+        border-spacing: 50px;
 }
 h1{
     color: #fff;
@@ -29,8 +30,7 @@ h1{
 
 td{
     padding: 20px;
-    background: #f6f6f6;
-    border-spacing: 220px;
+    border-spacing: 50px;
     font-size: 20px;
     color: #555;
     position: relative;
@@ -38,9 +38,14 @@ td{
     height: 46px;
     margin-top: 6px;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
-
+table{
+    border-radius: 10px 75px 10px 10px;
+    background: #f6f6f6;
+    width: 50%;
+    position: relative;
+}
 
 
 
