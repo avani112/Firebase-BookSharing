@@ -1,22 +1,24 @@
-.navbar{
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 15px;
-        letter-spacing: 2px;
-}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 .download{
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 15px;
         letter-spacing: 2px;
+        color: blue;
+        background: rgba(255,255,255,0.6);
+        cursor:  pointer;
+        padding: 20px;
+        background: #f6f6f6;
+        font-size: 20px;
+        position: absolute;
+        text-align: right;
+        border-bottom: 1px solid #e6e6e6;
 }
-
 h1{
     color: #fff;
     font-size: 64px;
@@ -25,68 +27,22 @@ h1{
     text-align: center;
 }
 
-.content{
-    background: #fff;
-    max-width: 960px;
-    margin: 30px auto;
-    padding:  20px 30px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
-}
-
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-li{
+td{
     padding: 20px;
     background: #f6f6f6;
+    border-spacing: 220px;
     font-size: 20px;
     color: #555;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
     height: 46px;
-}
-
-li:nth-child(even){
-    padding: 20px;
-    background: #f2f2f2;
-}
-
-/*  */
-
-li span:nth-child(2){
-    font-size: 16px;
     margin-top: 6px;
-    color: #999;
-}
-
-li .download{
-    position: absolute;
-    top: 0;
-    right: 60px;
-    background: rgba(255,255,255,0.6);
-    width: 40px;
-    text-align: center;
-    padding: 10px 0;
-    font-weight:  bold;
-    cursor:  pointer;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 
-button{
-    border: 0;
-    background: #fff;
-    border-radius: 10px;
-    padding: 13px;
-    width: 14%;
-    box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
-    font-weight: bold;
-    font-family: ubuntu;
-    letter-spacing: 1px;
-    color: #999;
-}
+
 
 
 
