@@ -1,0 +1,46 @@
+<html>
+    <head>
+       
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body background="web.jpeg">
+
+        <h1>Sell Book</h1>
+
+        <div class="content">
+
+            <form id="add-book-form">
+                <input type="text" name="name" placeholder="Seller name">
+                <input type="text" name="bookname" placeholder="Book name">
+                <input type="number" name="contact" placeholder=" Contact">
+                <button>Add Book</button>
+            </form>
+
+            <ul id="book-list"></ul>
+
+        </div>
+ 
+  
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-firestore.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBlr8Syh2bwEHKbF7IKhsArsexrAvv_OwE",
+    authDomain: "book-sharing-27381.firebaseapp.com",
+    databaseURL: "https://book-sharing-27381.firebaseio.com",
+    projectId: "book-sharing-27381",
+    storageBucket: "book-sharing-27381.appspot.com",
+    messagingSenderId: "745323790230"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+
+        <script src="sell.js"></script>
+    </body>
+</html>
